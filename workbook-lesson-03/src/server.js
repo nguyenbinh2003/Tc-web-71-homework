@@ -1,7 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const router = require("./routes/index");
-const logRequest = require("./middleware/logRequest.js");
+const logRequest = require("./middlewares/logRequest.js");
 
 const app = express();
 const PORT = 3001;

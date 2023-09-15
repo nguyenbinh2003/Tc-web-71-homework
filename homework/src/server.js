@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const { engine } = require("express-handlebars");
 const morgan = require("morgan");
-const router = require("./router");
+const router = require("./routes");
 const errorHandle = require("./middleware/errorHandle");
 const bodyParser = require("body-parser");
 

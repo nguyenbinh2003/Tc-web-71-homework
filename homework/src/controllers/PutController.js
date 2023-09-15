@@ -4,7 +4,6 @@ const putData = (req, res) => {
   const { id } = req.params;
   const { favorites } = req.body;
   if (id) {
-    console.log(id);
     const findId = data.find((data) => {
       return data.id == id;
     });

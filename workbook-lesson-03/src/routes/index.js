@@ -3,10 +3,10 @@ const studentRouter = require("./student.router");
 const subjectRouter = require("./subject.router");
 const teacherRouter = require("./teacher.router");
 const systemStatistic = require("../controllers/systemStatistic");
-const userStatisticStudent = require("../middleware/userStatisticStudent");
-const userStatisticSubject = require("../middleware/userStatisticSubject");
-const userStatisticTeacher = require("../middleware/userStatisticTeacher");
-const checkApiKey = require("../middleware/checkAPIkey.js");
+const userStatisticStudent = require("../middlewares/userStatisticStudent");
+const userStatisticSubject = require("../middlewares/userStatisticSubject");
+const userStatisticTeacher = require("../middlewares/userStatisticTeacher");
+const checkApiKey = require("../middlewares/checkAPIkey.js");
 
 const router = express.Router();
 
