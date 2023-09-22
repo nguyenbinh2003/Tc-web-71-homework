@@ -1,0 +1,26 @@
+    - Truy vấn tất cả các nhà hàng có zipcode là 11209
+        {"address.zipcode":{$all:["11209"]}}
+
+    - Truy vấn tất cả những nhà hàng chuyên về ẩm thực Mỹ
+        {cuisine:{$all:["American "]}}
+
+    - Truy vấn tất cả các nhà hàng nằm ở quận Brooklyn
+        {borough:{$all:["Brooklyn"]}}
+
+    - Truy vấn tất cả các nhà hàng nằm ở quận Manhattan
+        {borough:{$all:["Manhattan"]}}
+
+    - Truy vấn tất cả nhà hàng về gà ở quận Manhattan
+        {cuisine:{$all:["Chicken"]}}
+    
+    - Truy vấn tất cả nhà hàng nằm ở trên phố Wall Street
+        {"address.street":{$all:["Wall Street"]}}
+
+    - Truy vấn tất cả những nhà hàng có trên 3 đánh giá
+        {grades:{$gte:{$size:3}}}
+    
+    - Truy vấn tất cả những nhà hàng có đánh giá với số điểm loại B
+        {"grades.grade":{$all:["B"]}}
+    
+    - Truy vấn tất cả những nhà hàng có đánh giá với số điểm trên 10
+        {"grades.score":{ $gt: 10 } }
